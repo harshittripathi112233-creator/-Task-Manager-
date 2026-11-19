@@ -37,11 +37,13 @@ task-manager/
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/your-repo-name.git
+   git clone https://github.com/harshittripathi112233-creator/-Task-Manager-.git
    ```
 2. Open the folder:
    ```bash
-   cd your-repo-name
+   cd -Task-Manager-
+
+
    ```
 3. Open `index2.html` in your browser. Keep `style.css` and `script.js` in the same folder.
 
