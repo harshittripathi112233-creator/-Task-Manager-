@@ -2,7 +2,7 @@
 
 A Kanban-style task manager built with plain HTML, CSS and JavaScript. No frameworks, no build step. Tasks are saved in your browser with `localStorage`.
 
-**Live demo:** https://harshittripathi112233-creator.github.io/your-repo-name/
+**Live demo:** https://harshittripathi112233-creator.github.io/Task-Manager/
 
 ## Features
 
