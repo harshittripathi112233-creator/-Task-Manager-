@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Task manager</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<aside class="side" aria-label="Navigation">
+  <div class="logo">≋</div>
+  <nav>
+    <button title="Dashboard">▥</button>
+    <button class="on" title="Tasks">☑</button>
+    <button title="Library">📖</button>
+    <button title="Notes">✎</button>
+  </nav>
+</aside>
+
+<div class="main">
+  <header>
+    <h1>Task manager</h1>
+    <label class="search">
+      <span aria-hidden="true">⌕</span>
+      <input id="q" type="search" placeholder="Search..." aria-label="Search tasks">
+      <kbd>⌘ K</kbd>
+    </label>
+    <button id="theme" class="icon" aria-label="Toggle dark mode">☾</button>
+    <div class="user"><span>Your Name</span><i class="av">YN</i></div>
+  </header>
+
+  <div class="toolbar">
+    <div class="pop-wrap">
+      <button id="filterBtn" class="btn outline">⚙ Filter</button>
+      <div id="filterPanel" class="panel" hidden>
+        <label>Category <select id="fCat"></select></label>
+        <label>Priority <select id="fPri"></select></label>
+        <label class="chk"><input type="checkbox" id="fFav"> Favorites only</label>
+        <label class="chk"><input type="checkbox" id="fArch"> Show archived</label>
+        <button id="fReset" class="btn link">Reset filters</button>
+      </div>
+    </div>
+    <button id="addBtn" class="btn accent">+ Add New</button>
+  </div>
+
+  <main class="board" id="board"></main>
+</div>
+
+<div id="menu" class="menu" hidden>
+  <button data-a="edit">✎ Edit Task</button>
+  <button data-a="done">✓ Mark as Done</button>
+  <button data-a="fav">☆ Add to favorites</button>
+  <button data-a="arch">▤ Archive</button>
+  <hr>
+  <button data-a="del" class="danger">🗑 Delete Task</button>
+</div>
+
+<dialog id="dlg">
+  <form id="form" method="dialog">
+    <h2 id="dlgTitle">New task</h2>
+    <label>Title <input name="title" required maxlength="120"></label>
+    <div class="row">
+      <label>Category <select name="cat"></select></label>
+      <label>Priority <select name="pri"></select></label>
+    </div>
+    <div class="row">
+      <label>Status <select name="status"></select></label>
+      <label>Due date <input type="date" name="due"></label>
+    </div>
+    <div class="row">
+      <label>Attachments <input type="number" name="files" min="0" max="99" value="0"></label>
+      <label>Assignees <input type="number" name="people" min="0" max="3" value="0"></label>
+    </div>
+    <div class="actions">
+      <button type="button" id="cancel" class="btn outline">Cancel</button>
+      <button type="submit" class="btn solid">Save task</button>
+    </div>
+  </form>
+</dialog>
+
+<script src="script2.js"></script>
+</body>
+</html>
