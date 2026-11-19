@@ -2,9 +2,7 @@
 
 A Kanban-style task manager built with plain HTML, CSS and JavaScript. No frameworks, no build step. Tasks are saved in your browser with `localStorage`.
 
-**Live demo:** https://your-username.github.io/your-repo-name/
-
-![Screenshot](screenshot.png)
+**Live demo:** https://harshittripathi112233-creator.github.io/your-repo-name/
 
 ## Features
 
@@ -29,9 +27,9 @@ A Kanban-style task manager built with plain HTML, CSS and JavaScript. No framew
 
 ```
 task-manager/
-├── index.html    # page structure
+├── index2.html    # page structure
 ├── style.css     # styles and dark theme
-├── script.js     # app logic and localStorage
+├── script2.js     # app logic and localStorage
 └── README.md
 ```
 
@@ -45,7 +43,7 @@ task-manager/
    ```bash
    cd your-repo-name
    ```
-3. Open `index.html` in your browser. Keep `style.css` and `script.js` in the same folder.
+3. Open `index2.html` in your browser. Keep `style.css` and `script.js` in the same folder.
 
 ## How to use
 
@@ -68,7 +66,7 @@ Tasks and theme choice are stored in your browser's `localStorage` under the key
 1. Push the project to a GitHub repository.
 2. Go to **Settings → Pages**.
 3. Under **Source**, choose the `main` branch and the `/ (root)` folder, then save.
-4. Your site will be live at `https://your-username.github.io/your-repo-name/` after a minute or two.
+4. Your site will be live at `https:///harshittripathi112233-creator.github.io/Task-Manager/` after a minute or two.
 
 ## Roadmap
 
@@ -87,4 +85,4 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## Author
 
-Your Name – [@your-username](https://github.com/your-username)
+Harshit Tripathi – /harshittripathi112233-creator(https://github.com//harshittripathi112233-creator)
